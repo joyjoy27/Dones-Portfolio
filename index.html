@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dones Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>  
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="intro-text">
+      <p class="greeting">Hello World, I'm</p>
+      <h1>Dones <span>Mary Joy</span></h1>
+      <h2><span class="highlight">Software Developer</span></h2>
+      <p class="welcome">Welcome to my personal website. 👋🏼</p>
+    </div>
+    <div class="avatar">
+      <img src="pictures/Picture.png" alt="Mary Joy's Photo" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="pictures/Joy.jpg" alt="Mary Joy About Picture">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi everyone! My name is Dones Mary Joy and I am 19 years old. <br>
+          I am currently studying at Pamantasan ng Lungsod ng San Pablo, <br>
+          with a course of Bachelor of Science in Information Technology, <br>
+          majoring in Software Development. <br>
+          I want to become a successful Software Developer someday. <br>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p>
+      I have experience with these tools:   
+    </p>
+    <div class="skill-grid">
+      <div class="skill-item">
+        <img src="pictures/visual.png" alt="Visual Studio Icon">
+        <span class="skill-name">Visual Studio</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/html.png" alt="HTML Icon">
+        <span class="skill-name">HTML</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/css.png" alt="CSS Icon">
+        <span class="skill-name">CSS</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/js.png" alt="JavaScript Icon">
+        <span class="skill-name">JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/csharp.png" alt="Csharp Icon">
+        <span class="skill-name">Csharp</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/canva.png" alt="Canva Icon">
+        <span class="skill-name">Canva</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/figma.png" alt="Figma Icon">
+        <span class="skill-name">Figma</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/capcut.png" alt="CapCut Icon">
+        <span class="skill-name">CapCut</span>
+      </div>
+      <div class="skill-item">
+        <img src="pictures/word.png" alt="Microsoft Word Icon">
+        <span class="skill-name">Microsoft Word</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" id="submit-button">Send Message</button>
+      <div id="message-status"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
